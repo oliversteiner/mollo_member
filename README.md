@@ -1,55 +1,60 @@
 # Mollo Member
 
-## Bundles and Fields:
-- member_type (term)
 
-### Bundle Client
-#### General
-- speciality (term)
-- function (term)
-- position (term)
+
+### Content Type Mollo Member
+
+#### activity
 - is_active (bool)
 - entry (date)
 - resigning (date)
 
-#### Personal
- - images
+#### Name
+ - gender (term)
  - first_name
  - last_name
- - birthday
- - link
- - wikipedia
- - facebook
 
 
 #### Contact
  - email
- - mobile
- - phone
+- link
+- wikipedia
+- facebook
+
 
 #### Address
- - gender (term)
- - street_and_number
- - city
- - zip_code
- - country (term)
+ - mollo_address (ref)
 
-#### Helper
- - user
- - token
+### Media
+ - media
 
-### Bundle roles
- - name
- - client (ref)
- - event_solo (ref)
- - description
+#### Other
+- user
+- token
+- birthday
 
-### Bundle Client Group
- - name
- - client (ref)
- - description
 
-### Vocabularies
- - function
- - position
- - speciality
+### Content Type Mollo Group
+
+- group_type (term)
+- name
+- description
+
+
+#### Members
+- members (ref)
+
+#### Address
+- mollo_address (ref)
+
+#### Contact
+- email
+- link
+- facebook
+
+### Media
+- media
+
+#### Other
+- token
+- is_active
