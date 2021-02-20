@@ -1,6 +1,6 @@
 # Mollo Member
 
-
+Version 0.1.0
 
 ### Content Type Mollo Member
 
