@@ -2,11 +2,11 @@
   "name": "drupal/mollo_member",
   "type": "drupal-module",
   "license": "GPL-3.0+",
-  "description": "Member Module for Mollo Events",
+  "description": "Member Module for Mollo",
   "keywords": [
     "drupal",
     "mollo",
-    "Events"
+    "member"
   ],
   "homepage": "https://github.com/oliversteiner/mollo_member",
   "minimum-stability": "dev",
