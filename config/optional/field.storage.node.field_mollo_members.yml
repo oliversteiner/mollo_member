@@ -1,0 +1,21 @@
+uuid: 9d424201-808e-4e62-a1a3-fe0bc65eda41
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 08PP-gBOEXYTmVd7ZBJaJ4sII9ywQOFtDtSCJqB-Tkc
+id: node.field_mollo_members
+field_name: field_mollo_members
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

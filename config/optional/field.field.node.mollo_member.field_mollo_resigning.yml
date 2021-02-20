@@ -1,0 +1,23 @@
+uuid: 97ebd306-c94c-47d3-a2bd-b0e81b3b07bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_resigning
+    - node.type.mollo_member
+  module:
+    - datetime
+_core:
+  default_config_hash: yquWo5O1ZYEigbM_3scjOpQoP-m7zAfeSaCPf7gwFGc
+id: node.mollo_member.field_mollo_resigning
+field_name: field_mollo_resigning
+entity_type: node
+bundle: mollo_member
+label: 'Resigning Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,57 @@
+uuid: a481260f-b62f-4fb2-98ff-a464c04cc6e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mollo_group.body
+    - field.field.node.mollo_group.field_mollo_addresses
+    - field.field.node.mollo_group.field_mollo_description
+    - field.field.node.mollo_group.field_mollo_email
+    - field.field.node.mollo_group.field_mollo_facebook
+    - field.field.node.mollo_group.field_mollo_group_type
+    - field.field.node.mollo_group.field_mollo_is_active
+    - field.field.node.mollo_group.field_mollo_links
+    - field.field.node.mollo_group.field_mollo_media
+    - field.field.node.mollo_group.field_mollo_members
+    - field.field.node.mollo_group.field_mollo_name
+    - field.field.node.mollo_group.field_mollo_title_image
+    - field.field.node.mollo_group.field_mollo_token
+    - node.type.mollo_group
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 20ku5A-R0WvZzWhqFsWcFzV-jgX_NKlmq56u6yTI2n0
+id: node.mollo_group.teaser
+targetEntityType: node
+bundle: mollo_group
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mollo_addresses: true
+  field_mollo_description: true
+  field_mollo_email: true
+  field_mollo_facebook: true
+  field_mollo_group_type: true
+  field_mollo_is_active: true
+  field_mollo_links: true
+  field_mollo_media: true
+  field_mollo_members: true
+  field_mollo_name: true
+  field_mollo_title_image: true
+  field_mollo_token: true
+  langcode: true

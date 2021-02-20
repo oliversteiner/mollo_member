@@ -1,0 +1,262 @@
+uuid: afd2f719-9d90-4acc-a501-9e4e3ba759b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mollo_group.body
+    - field.field.node.mollo_group.field_mollo_addresses
+    - field.field.node.mollo_group.field_mollo_description
+    - field.field.node.mollo_group.field_mollo_email
+    - field.field.node.mollo_group.field_mollo_facebook
+    - field.field.node.mollo_group.field_mollo_group_type
+    - field.field.node.mollo_group.field_mollo_is_active
+    - field.field.node.mollo_group.field_mollo_links
+    - field.field.node.mollo_group.field_mollo_media
+    - field.field.node.mollo_group.field_mollo_members
+    - field.field.node.mollo_group.field_mollo_name
+    - field.field.node.mollo_group.field_mollo_title_image
+    - field.field.node.mollo_group.field_mollo_token
+    - node.type.mollo_group
+  module:
+    - autocomplete_deluxe
+    - field_group
+    - inline_entity_form
+    - link
+    - media_library
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_contact:
+      children:
+        - field_mollo_email
+        - field_mollo_facebook
+        - field_mollo_links
+      parent_name: ''
+      weight: 6
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Contact
+    group_map:
+      children: {  }
+      parent_name: ''
+      weight: 19
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Map
+    group_others:
+      children:
+        - field_mollo_is_active
+        - field_mollo_token
+      parent_name: ''
+      weight: 8
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Others
+    group_members:
+      children:
+        - field_mollo_members
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Members
+    group_media:
+      children:
+        - group_title_image
+        - group_more_images
+      parent_name: ''
+      weight: 7
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Media
+    group_title_image:
+      children:
+        - field_mollo_title_image
+      parent_name: group_media
+      weight: 17
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: 'Title Image'
+    group_more_images:
+      children:
+        - field_mollo_media
+      parent_name: group_media
+      weight: 18
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'more Images'
+_core:
+  default_config_hash: RL8Mrknfa-u1TuBc0-psR-VhDMuSKUiBQyVtiP_QfwY
+id: node.mollo_group.default
+targetEntityType: node
+bundle: mollo_group
+mode: default
+content:
+  field_mollo_addresses:
+    weight: 5
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Address
+      label_plural: Addresses
+      collapsible: true
+      revision: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_mollo_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mollo_email:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_mollo_facebook:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mollo_group_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mollo_is_active:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mollo_links:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mollo_media:
+    weight: 13
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_mollo_members:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      selection_handler: default
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: false
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_mollo_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_title_image:
+    weight: 10
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_mollo_token:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

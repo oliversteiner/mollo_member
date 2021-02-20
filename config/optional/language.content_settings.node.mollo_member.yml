@@ -1,0 +1,13 @@
+uuid: 0c7b3195-8858-49c4-8be5-ee9ed5781578
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mollo_member
+_core:
+  default_config_hash: Ze4B0xY4kI-0ouBF17xfmxnjqsiVbD2-o8AnZZaZipI
+id: node.mollo_member
+target_entity_type_id: node
+target_bundle: mollo_member
+default_langcode: site_default
+language_alterable: false

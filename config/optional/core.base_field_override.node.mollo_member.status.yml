@@ -1,0 +1,24 @@
+uuid: d384f385-8946-4df9-98f6-8e71efb620ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mollo_member
+_core:
+  default_config_hash: pV_6ElfYH5vxRn5Z0oRLRZDm-rgzZJPf754r_uiLtbc
+id: node.mollo_member.status
+field_name: status
+entity_type: node
+bundle: mollo_member
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

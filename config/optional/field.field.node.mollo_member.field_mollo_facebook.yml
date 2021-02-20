@@ -1,0 +1,25 @@
+uuid: b38b840e-e933-40a6-9577-2445c54c8356
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_facebook
+    - node.type.mollo_member
+  module:
+    - link
+_core:
+  default_config_hash: '-8-Z5K612uh9DxjW-5YQPjeUpOYiTimk6wLvTTih0YM'
+id: node.mollo_member.field_mollo_facebook
+field_name: field_mollo_facebook
+entity_type: node
+bundle: mollo_member
+label: Facebook
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

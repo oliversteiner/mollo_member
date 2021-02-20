@@ -1,0 +1,21 @@
+uuid: 078c8af7-dd6d-4a6f-b289-88dc0457bc83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_token
+    - node.type.mollo_member
+_core:
+  default_config_hash: eMJGVS9qCiM_VdKYMfDMH_5e78qSw4CJUr4ARhHN_os
+id: node.mollo_member.field_mollo_token
+field_name: field_mollo_token
+entity_type: node
+bundle: mollo_member
+label: Token
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

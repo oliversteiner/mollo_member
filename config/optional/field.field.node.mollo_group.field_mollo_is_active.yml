@@ -1,0 +1,25 @@
+uuid: 5949b943-6b57-4246-8fe4-0a6875d1a843
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_is_active
+    - node.type.mollo_group
+_core:
+  default_config_hash: DdwS8q-mOxnoVKsrqUo3KH-3m4b-rPU1TdNEEG106-A
+id: node.mollo_group.field_mollo_is_active
+field_name: field_mollo_is_active
+entity_type: node
+bundle: mollo_group
+label: 'is active'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

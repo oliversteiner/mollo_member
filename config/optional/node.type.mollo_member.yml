@@ -1,0 +1,19 @@
+uuid: b5bb63c4-32db-417a-8ac7-b0a78562f780
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: XnCTz1t4LTazCNxUJxEBIn2jzIkPCDGEGqIgZF6Gcgo
+name: Members
+type: mollo_member
+description: Mollo
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

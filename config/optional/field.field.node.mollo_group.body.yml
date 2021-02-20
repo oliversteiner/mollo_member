@@ -1,0 +1,25 @@
+uuid: beb3f3ea-7911-441c-9ab7-095e867bc761
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mollo_group
+  module:
+    - text
+_core:
+  default_config_hash: 1c5aEfjVOeEMBKUyfbQgo5JRRfPqrsBdhSwgQelxS_8
+id: node.mollo_group.body
+field_name: body
+entity_type: node
+bundle: mollo_group
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

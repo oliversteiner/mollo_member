@@ -1,0 +1,292 @@
+uuid: d00f115c-2287-4162-b817-abf5e6c0dc6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mollo_member.body
+    - field.field.node.mollo_member.field_mollo_addresses
+    - field.field.node.mollo_member.field_mollo_birthday
+    - field.field.node.mollo_member.field_mollo_description
+    - field.field.node.mollo_member.field_mollo_email
+    - field.field.node.mollo_member.field_mollo_entry
+    - field.field.node.mollo_member.field_mollo_facebook
+    - field.field.node.mollo_member.field_mollo_first_name
+    - field.field.node.mollo_member.field_mollo_gender
+    - field.field.node.mollo_member.field_mollo_is_active
+    - field.field.node.mollo_member.field_mollo_last_name
+    - field.field.node.mollo_member.field_mollo_links
+    - field.field.node.mollo_member.field_mollo_media
+    - field.field.node.mollo_member.field_mollo_resigning
+    - field.field.node.mollo_member.field_mollo_token
+    - field.field.node.mollo_member.field_mollo_user
+    - node.type.mollo_member
+  module:
+    - datetime
+    - field_group
+    - inline_entity_form
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_name:
+      children:
+        - field_mollo_gender
+        - field_mollo_first_name
+        - field_mollo_last_name
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Name
+    group_address:
+      children: {  }
+      parent_name: ''
+      weight: 13
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Address
+    group_other:
+      children:
+        - field_mollo_user
+        - field_mollo_token
+        - status
+        - field_mollo_birthday
+        - body
+      parent_name: ''
+      weight: 6
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Other
+    group_contact:
+      children:
+        - field_mollo_email
+        - field_mollo_links
+        - field_mollo_facebook
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: false
+      label: Contact
+    group_activity:
+      children:
+        - field_mollo_is_active
+        - field_mollo_entry
+        - field_mollo_resigning
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: false
+      label: Activity
+    group_newsletter:
+      children: {  }
+      parent_name: ''
+      weight: 15
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Newsletter
+    group_media:
+      children:
+        - field_mollo_media
+      parent_name: ''
+      weight: 5
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Media
+_core:
+  default_config_hash: HCb1Ndds5steX4LDY-KW18bvHMAz5x126gWGaF7U_sc
+id: node.mollo_member.default
+targetEntityType: node
+bundle: mollo_member
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 7
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_mollo_addresses:
+    weight: 3
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Address
+      label_plural: Addresses
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      revision: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_mollo_birthday:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mollo_email:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_mollo_entry:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mollo_facebook:
+    weight: 20
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mollo_first_name:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_gender:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mollo_is_active:
+    weight: 17
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mollo_last_name:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_links:
+    weight: 19
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mollo_media:
+    weight: 22
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mollo_resigning:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mollo_token:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_user:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_mollo_description: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

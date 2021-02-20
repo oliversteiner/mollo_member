@@ -1,0 +1,24 @@
+uuid: b0c2e003-0501-4f67-be16-0ca2c9fbdb65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mollo_member
+_core:
+  default_config_hash: o4LOSfCSJKUtlCU1dctgdllBO4NfCU3lm1vZyKyUbS4
+id: node.mollo_member.promote
+field_name: promote
+entity_type: node
+bundle: mollo_member
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

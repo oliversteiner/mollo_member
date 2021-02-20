@@ -1,0 +1,29 @@
+uuid: fb2736a2-3424-4bb4-8261-5d78b0954e6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_title_image
+    - media.type.image
+    - node.type.mollo_group
+id: node.mollo_group.field_mollo_title_image
+field_name: field_mollo_title_image
+entity_type: node
+bundle: mollo_group
+label: 'Title Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

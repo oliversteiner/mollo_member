@@ -1,0 +1,31 @@
+uuid: 29b9b363-fcab-48c0-b80a-b954f5a01860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_group_type
+    - node.type.mollo_group
+    - taxonomy.vocabulary.group_type
+_core:
+  default_config_hash: SoCoiYVTl74xyryvjO8M1krGX5wGjkhdVx8PazqSgf4
+id: node.mollo_group.field_mollo_group_type
+field_name: field_mollo_group_type
+entity_type: node
+bundle: mollo_group
+label: 'Group Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      group_type: group_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

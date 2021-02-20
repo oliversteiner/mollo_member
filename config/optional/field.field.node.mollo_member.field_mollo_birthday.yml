@@ -1,0 +1,23 @@
+uuid: d2a5e5bf-0e95-46a4-bb31-8337fb1969da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_birthday
+    - node.type.mollo_member
+  module:
+    - datetime
+_core:
+  default_config_hash: NPCgi5O_k2mkTm8WoCPvLHGjIVRgDJ--267tVqMud1o
+id: node.mollo_member.field_mollo_birthday
+field_name: field_mollo_birthday
+entity_type: node
+bundle: mollo_member
+label: Birthday
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

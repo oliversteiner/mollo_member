@@ -1,0 +1,30 @@
+uuid: 07032c33-953a-4764-b206-d0770e06a5fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_description
+    - node.type.mollo_member
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    plain_text: plain_text
+    restricted_html: '0'
+    full_html: '0'
+_core:
+  default_config_hash: JvV01Ax8L23hovjPEAErp-dduFasISSuUEV_SnLYlUs
+id: node.mollo_member.field_mollo_description
+field_name: field_mollo_description
+entity_type: node
+bundle: mollo_member
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

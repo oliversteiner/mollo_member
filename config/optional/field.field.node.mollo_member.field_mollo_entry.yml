@@ -1,0 +1,23 @@
+uuid: b3b2de8e-0968-4d7b-9ffb-2695bdfd4a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_entry
+    - node.type.mollo_member
+  module:
+    - datetime
+_core:
+  default_config_hash: RkaFsEokJXRu1sewlnoQt4yFDOQJ6J9JJB0hXLaZZKM
+id: node.mollo_member.field_mollo_entry
+field_name: field_mollo_entry
+entity_type: node
+bundle: mollo_member
+label: 'Entry Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_mollo_first_name] [node:field_mollo_last_name] - [node:nid]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.mollo_member

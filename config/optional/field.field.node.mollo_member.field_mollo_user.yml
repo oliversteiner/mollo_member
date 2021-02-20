@@ -1,0 +1,31 @@
+uuid: cc77e4c1-e961-4b9d-9929-84d7eaecb0a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_user
+    - node.type.mollo_member
+_core:
+  default_config_hash: YfjzbvRIZPuEZfhgFxQDqt50qvVDcmvLmT4n4rFFsIM
+id: node.mollo_member.field_mollo_user
+field_name: field_mollo_user
+entity_type: node
+bundle: mollo_member
+label: User
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+field_type: entity_reference

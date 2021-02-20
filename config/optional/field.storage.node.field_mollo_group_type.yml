@@ -1,0 +1,22 @@
+uuid: 1a6f311a-2151-4fa1-a9b8-589230f79861
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: AscNlppEvQcIGyvVeM_pgw2SarrrgQyTzoSLC3MAC8w
+id: node.field_mollo_group_type
+field_name: field_mollo_group_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
