@@ -1,0 +1,25 @@
+#
+# Content > Client
+#
+mollo_member.main:
+  title: 'Client'
+  description: 'Show all Roles'
+  route_name: mollo_member.client.list
+  parent: 'system.admin_content'
+#
+# Content > Client > Clients
+#
+mollo_member.client:
+  title: 'Clients'
+  description: 'Show all Roles'
+  route_name: mollo_member.client.list
+  parent: 'mollo_member.main'
+
+#
+# Content > Client > Groups
+#
+mollo_member.group:
+  title: 'Groups'
+  description: 'Show all Roles'
+  route_name: mollo_member.group.list
+  parent: 'mollo_member.main'

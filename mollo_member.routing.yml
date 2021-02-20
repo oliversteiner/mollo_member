@@ -1,0 +1,18 @@
+#
+# View Clients
+#
+mollo_member.client.list:
+  path: '/admin/client/list'
+  defaults:
+    _title: 'Clients'
+  requirements:
+    _permission: 'administer content'
+#
+# View Group
+#
+mollo_member.group.list:
+  path: '/admin/client-group/list'
+  defaults:
+    _title: 'Client Groups'
+  requirements:
+    _permission: 'administer content'

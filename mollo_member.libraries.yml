@@ -1,0 +1,9 @@
+mollo_member.main:
+  css:
+    theme:
+      assets/css/mollo_member.css: {}
+  js:
+    assets/js/mollo_member.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

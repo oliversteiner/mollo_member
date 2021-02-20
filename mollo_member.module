@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains mollo_member.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\mollo_utils\Utility\ViewFilter;
+
+/**
+ * Implements hook_help().
+ */
+function mollo_member_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mollo_member module.
+    case 'help.page.mollo_member':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Client Module for Mollo Events') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mollo_member_theme() {
+  return [
+    'mollo_member' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function mollo_member_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form['#id'] === 'views-exposed-form-mollo-member-roles-admin-list'
+
+  ) {
+
+    $form = ViewFilter::filter_mollo_event($form);
+
+  }
+
+}
