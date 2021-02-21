@@ -1,4 +1,4 @@
-name: 'Members'
+name: 'Member'
 type: module
 description: 'Member Module for Mollo Events'
 core_version_requirement: ^8 || ^9

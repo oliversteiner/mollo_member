@@ -34,15 +34,3 @@ function mollo_member_theme() {
     ],
   ];
 }
-
-function mollo_member_form_alter(&$form, &$form_state, $form_id) {
-
-  if ($form['#id'] === 'views-exposed-form-mollo-member-roles-admin-list'
-
-  ) {
-
-    $form = ViewFilter::filter_mollo_event($form);
-
-  }
-
-}
